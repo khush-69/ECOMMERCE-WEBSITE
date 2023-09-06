@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ecom.js" defer></script>
+    <link rel="stylesheet" href="ecom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://www.freepnglogos.com/uploads/amazon-png-logo-vector/amazon-png-logo-vector-1.png" alt="amazon" width="200px" height="200px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="#">Home</li>
+                    <li><a href="#">Products</li>
+                    <li><a href="#">Today's Deals</li>
+                    <li><a href="#">Contact</li>
+                    <li><a href="#" class="btn1">Login</a></li>
+                    <li><a href="#" class="btn1" style="background: radial-gradient(#fff,#ffd6d6); color: black;">Sign Up</a></li>
+                    <li><div class="search-container">
+                          <input type="text" placeholder="Search.." name="search" id="search" onkeyup="search()">
+                      </div></li>
+                </ul> 
+            </nav>
+            <img src="/cart.png" alt="" width="30px" height="30px" class="cart">
+            <img src="/menu.png" class="menuicon" onclick="toggle()">
+        </div>
+        <div id="search_prod" style="width: 200px; margin: auto;"></div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Improve your lifestyle with us...</h1>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="/image1.png" alt="">
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="categories">
+        <div class="smallcont">
+            <h2 class="title">Top Categories</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="/buy-2.jpg" alt="" height="180px" width="120px">
+                <h4>Shoes</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="/exclusive.png" alt="" height="180px" width="120px">
+                <h4>Smart Watches</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="/category-1.jpg" alt="" height="180px" width="120px">
+                <h4>Bottom Wears</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="col-3">
+                <img src="/buy-1.jpg" alt="" height="180px" width="120px">
+                <h4>T-Shirts</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="/product-8.jpg" alt="" height="180px" width="120px">
+                <h4>Watches</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="/product-6.jpg" alt="" height="180px" width="120px">
+                <h4>Sports Wears</h4>
+                <a href="" class="btn2">Explore More &#8594;</a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Product Section -->
+    <div class="row">
+        <div id="products"></div>
+    </div>
+    </div>
+    <div class="offer">
+        <div class="smallcont">
+            <div class="row">
+                <div class="col-2" style="flex-basis: 35%;">
+                    <h1>Deal of the Day</h1>
+                    <img src="exclusive.png " alt="">
+                </div>
+                <div class="col-2" style="margin-left: 10px; flex-basis: 35%;">
+                    <p>
+                        Exclusively Available only on our Platform
+                    </p>
+                    <h1>Smart - Band 4</h1>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, qui?</small>
+                    <h3 style="text-align: center;"><br>Only at 
+                        <h3 style="text-decoration: line-through; text-align: center;">190$</h3>
+                        <h2 style="text-align: center;">150$ <h2>
+                    </h3>
+                    <button class="btn-buy" style="margin: auto;">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                    <h3>Download our APP</h3>
+                    <div class="app-logo">
+                        <img src="/app-store.png" alt="">
+                        <img src="/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2">
+                   <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footercol3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook : www.facebook.com/ecom</li>
+                        <li>Instagram : www.instagram.com/ecom</li>
+                        <li>Twitter : www.twitter.com/ecom</li>
+                        <li>Youtube : www.youtube.com/ecom</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        var menuitems=document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function toggle(){
+            if(menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight="300px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>
