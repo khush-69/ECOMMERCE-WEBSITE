@@ -81,7 +81,7 @@ function search(){
     {
         if(input=="")
         {
-            location.replace("./products.html");
+            location.replace("./index.html");
         }
         else if(prods[i].name.toLowerCase().includes(input)||prods[i].name.toUpperCase().includes(input))
         {
